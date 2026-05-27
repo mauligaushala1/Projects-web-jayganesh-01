@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Jayganesh Manohar Private Limited</title>
+  <meta name="description" content="Explore completed and ongoing projects by Jayganesh Manohar Private Limited across electrical, civil, solar and infrastructure sectors." />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="projects.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════ -->
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">🌟</div>
+    <div class="nav-logo-text">
+      <strong>Jayganesh Manohar</strong>
+      <span>Private Limited</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About US</a></li>
+    <li class="nav-dropdown nav-biz">
+      <a href="index.html#businesses">Businesses</a>
+      <div class="dropdown-menu">
+        <a href="electrical.html">Electrical Engineering</a>
+        <a href="index.html#businesses">Civil Engineering &amp; Construction</a>
+        <a href="index.html#businesses">Solar Energy Solutions</a>
+        <a href="index.html#businesses">Agriculture Farming</a>
+        <a href="index.html#businesses">Manufacturing Unit</a>
+      </div>
+    </li>
+    <li><a href="projects.html" style="color:var(--orange)">Projects</a></li>
+    <li><a href="careers.html">careers</a></li>
+    <li><a href="index.html#contact-cta" class="nav-cta">Contact us</a></li>
+  </ul>
+  <div class="hamburger" id="ham"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobnav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About US</a>
+  <div class="mob-biz-toggle" onclick="toggleMobBiz()">Businesses <span id="mobBizArrow">▾</span></div>
+  <div class="mob-biz-sub" id="mobBizSub">
+    <a href="electrical.html">⚡ Electrical Engineering</a>
+    <a href="index.html#businesses">🏗️ Civil Engineering</a>
+    <a href="index.html#businesses">☀️ Solar Energy Solutions</a>
+    <a href="index.html#businesses">🌿 Agriculture Farming</a>
+    <a href="index.html#businesses">🔧 Manufacturing Unit</a>
+  </div>
+  <a href="projects.html">Projects</a>
+  <a href="careers.html">Careers</a>
+  <a href="index.html#contact-cta">Contact Us</a>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section id="projects-hero">
+  <div class="projects-hero-inner">
+
+    <!-- Left: Text -->
+    <div>
+      <span class="projects-hero-tag">Our Portfolio</span>
+      <h1 class="projects-hero-title">
+        Our<br><span class="org">Projects</span>
+      </h1>
+      <p class="projects-hero-sub">
+        Explore our completed and ongoing projects that showcase our commitment
+        to quality, innovation, and excellence. Each project reflects our dedication
+        to delivering reliable solutions and creating long-lasting value for our clients.
+      </p>
+      <div class="projects-hero-stats">
+        <div>
+          <span class="ph-stat-num">100+</span>
+          <span class="ph-stat-lbl">Projects Done</span>
+        </div>
+        <div>
+          <span class="ph-stat-num">15+</span>
+          <span class="ph-stat-lbl">Years Active</span>
+        </div>
+        <div>
+          <span class="ph-stat-num">5</span>
+          <span class="ph-stat-lbl">Sectors</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Image collage -->
+    <div class="projects-hero-visual">
+      <div class="ph-img big">
+        <!-- <img src="images/project-hero-main.jpg" alt="Main Project"> -->
+        [ Add Main Project Image ]
+      </div>
+      <div class="ph-img">
+        <!-- <img src="images/project-hero-2.jpg" alt="Project"> -->
+        [ Add Image ]
+      </div>
+      <div class="ph-img">
+        <!-- <img src="images/project-hero-3.jpg" alt="Project"> -->
+        [ Add Image ]
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FEATURED PROJECTS  (beige bg)
+══════════════════════════════════════ -->
+<section id="featured">
+  <div class="sec-center">
+    <span class="section-label">HIGHLIGHTS</span>
+    <h2 class="section-title">Featured <span class="org">Projects</span></h2>
+    <p class="section-desc">
+      Explore some of our most notable projects where innovation, precision,
+      and dedication come together to create exceptional results.
+    </p>
+  </div>
+
+  <div class="featured-grid">
+
+    <!-- Featured Card 1 -->
+    <div class="feat-card">
+      <div class="feat-card-img">
+        <!-- <img src="images/proj-electric-1.jpg" alt="Electrical Project"> -->
+        <div class="feat-card-img-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+            <polyline points="21 15 16 10 5 21"/>
+          </svg>
+        </div>
+        <div class="feat-badge">Featured</div>
+      </div>
+      <div class="feat-card-body">
+        <div class="feat-card-cat">⚡ Electrical</div>
+        <div class="feat-card-title">HT/LT Substation Installation — MSEDCL</div>
+        <p class="feat-card-desc">
+          Complete design, supply, and installation of a 33kV/11kV substation
+          with HT panels, transformers, and LT distribution boards for MSEDCL
+          under the RDSS scheme.
+        </p>
+        <div class="feat-card-date">📅 Jan 2024 – Jun 2024</div>
+        <a href="#" class="btn-orange">Know More</a>
+      </div>
+    </div>
+
+    <!-- Featured Card 2 -->
+    <div class="feat-card">
+      <div class="feat-card-img">
+        <!-- <img src="images/proj-civil-1.jpg" alt="Civil Project"> -->
+        <div class="feat-card-img-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+            <polyline points="21 15 16 10 5 21"/>
+          </svg>
+        </div>
+        <div class="feat-badge">Featured</div>
+      </div>
+      <div class="feat-card-body">
+        <div class="feat-card-cat">🏗️ Civil</div>
+        <div class="feat-card-title">Industrial Shed Construction — Dombivli</div>
+        <p class="feat-card-desc">
+          Construction of a 5,000 sq ft RCC industrial shed including foundation,
+          structural framework, roofing, flooring, and electrical fit-out for
+          a manufacturing client in Dombivli MIDC.
+        </p>
+        <div class="feat-card-date">📅 Mar 2024 – Aug 2024</div>
+        <a href="#" class="btn-orange">Know More</a>
+      </div>
+    </div>
+
+    <!-- Featured Card 3 -->
+    <div class="feat-card">
+      <div class="feat-card-img">
+        <!-- <img src="images/proj-solar-1.jpg" alt="Solar Project"> -->
+        <div class="feat-card-img-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+            <polyline points="21 15 16 10 5 21"/>
+          </svg>
+        </div>
+        <div class="feat-badge">Featured</div>
+      </div>
+      <div class="feat-card-body">
+        <div class="feat-card-cat">☀️ Solar</div>
+        <div class="feat-card-title">50kW Rooftop Solar Plant — Thane</div>
+        <p class="feat-card-desc">
+          End-to-end EPC for a 50kW grid-connected rooftop solar power plant
+          including net metering, monitoring system, and MSEDCL approvals
+          for a commercial building in Thane.
+        </p>
+        <div class="feat-card-date">📅 Sep 2024 – Nov 2024</div>
+        <a href="#" class="btn-orange">Know More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     ALL PROJECTS  (dark bg + filter)
+══════════════════════════════════════ -->
+<section id="all-projects">
+  <div class="sec-center">
+    <span class="section-label">COMPLETE PORTFOLIO</span>
+    <h2 class="section-title">Our <span class="org">Projects</span></h2>
+    <p class="section-desc">Browse all projects by category. Click any category to filter.</p>
+  </div>
+
+  <!-- Filter tabs -->
+  <div class="proj-filter-wrap">
+    <button class="proj-filter-btn active" onclick="filterProjects('all', this)">All Projects</button>
+    <button class="proj-filter-btn" onclick="filterProjects('construction', this)">Construction</button>
+    <button class="proj-filter-btn" onclick="filterProjects('infrastructure', this)">Infrastructure</button>
+    <button class="proj-filter-btn" onclick="filterProjects('electrical', this)">Electrical</button>
+  </div>
+
+  <!-- Project cards -->
+  <div class="proj-grid" id="projGrid">
+
+    <!-- Card 1 -->
+    <div class="proj-card" data-cat="electrical">
+      <div class="proj-card-img">
+        <!-- <img src="images/proj-1.jpg" alt="Project 1"> -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1">
+          <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+          <polyline points="21 15 16 10 5 21"/>
+        </svg>
+      </div>
+      <div class="proj-card-body">
+        <div class="proj-card-cat">⚡ Electrical</div>
+        <div class="proj-card-title">Project Name</div>
+        <p class="proj-card-desc">Modern residential construction project designed with high-quality materials and efficient architecture.</p>
+        <div class="proj-card-date">📅 2 June 25 – 3 Oct 30</div>
+        <a href="#" class="proj-card-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="proj-card" data-cat="construction">
+      <div class="proj-card-img">
+        <!-- <img src="images/proj-2.jpg" alt="Project 2"> -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1">
+          <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+          <polyline points="21 15 16 10 5 21"/>
+        </svg>
+      </div>
+      <div class="proj-card-body">
+        <div class="proj-card-cat">🏗️ Construction</div>
+        <div class="proj-card-title">Project Name</div>
+        <p class="proj-card-desc">Modern residential construction project designed with high-quality materials and efficient architecture.</p>
+        <div class="proj-card-date">📅 2 June 25 – 3 Oct 30</div>
+        <a href="#" class="proj-card-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="proj-card" data-cat="infrastructure">
+      <div class="proj-card-img">
+        <!-- <img src="images/proj-3.jpg" alt="Project 3"> -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1">
+          <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+          <polyline points="21 15 16 10 5 21"/>
+        </svg>
+      </div>
+      <div class="proj-card-body">
+        <div class="proj-card-cat">🏛️ Infrastructure</div>
+        <div class="proj-card-title">Project Name</div>
+        <p class="proj-card-desc">Modern residential construction project designed with high-quality materials and efficient architecture.</p>
+        <div class="proj-card-date">📅 2 June 25 – 3 Oct 30</div>
+        <a href="#" class="proj-card-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="proj-card" data-cat="electrical">
+      <div class="proj-card-img">
+        <!-- <img src="images/proj-4.jpg" alt="Project 4"> -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1">
+          <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+          <polyline points="21 15 16 10 5 21"/>
+        </svg>
+      </div>
+      <div class="proj-card-body">
+        <div class="proj-card-cat">⚡ Electrical</div>
+        <div class="proj-card-title">Project Name</div>
+        <p class="proj-card-desc">Modern residential construction project designed with high-quality materials and efficient architecture.</p>
+        <div class="proj-card-date">📅 2 June 25 – 3 Oct 30</div>
+        <a href="#" class="proj-card-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="proj-card" data-cat="construction">
+      <div class="proj-card-img">
+        <!-- <img src="images/proj-5.jpg" alt="Project 5"> -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1">
+          <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+          <polyline points="21 15 16 10 5 21"/>
+        </svg>
+      </div>
+      <div class="proj-card-body">
+        <div class="proj-card-cat">🏗️ Construction</div>
+        <div class="proj-card-title">Project Name</div>
+        <p class="proj-card-desc">Modern residential construction project designed with high-quality materials and efficient architecture.</p>
+        <div class="proj-card-date">📅 2 June 25 – 3 Oct 30</div>
+        <a href="#" class="proj-card-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="proj-card" data-cat="infrastructure">
+      <div class="proj-card-img">
+        <!-- <img src="images/proj-6.jpg" alt="Project 6"> -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1">
+          <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+          <polyline points="21 15 16 10 5 21"/>
+        </svg>
+      </div>
+      <div class="proj-card-body">
+        <div class="proj-card-cat">🏛️ Infrastructure</div>
+        <div class="proj-card-title">Project Name</div>
+        <p class="proj-card-desc">Modern residential construction project designed with high-quality materials and efficient architecture.</p>
+        <div class="proj-card-date">📅 2 June 25 – 3 Oct 30</div>
+        <a href="#" class="proj-card-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="proj-card" data-cat="electrical">
+      <div class="proj-card-img">
+        <!-- <img src="images/proj-7.jpg" alt="Project 7"> -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1">
+          <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+          <polyline points="21 15 16 10 5 21"/>
+        </svg>
+      </div>
+      <div class="proj-card-body">
+        <div class="proj-card-cat">⚡ Electrical</div>
+        <div class="proj-card-title">Project Name</div>
+        <p class="proj-card-desc">Modern residential construction project designed with high-quality materials and efficient architecture.</p>
+        <div class="proj-card-date">📅 2 June 25 – 3 Oct 30</div>
+        <a href="#" class="proj-card-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="proj-card" data-cat="construction">
+      <div class="proj-card-img">
+        <!-- <img src="images/proj-8.jpg" alt="Project 8"> -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1">
+          <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+          <polyline points="21 15 16 10 5 21"/>
+        </svg>
+      </div>
+      <div class="proj-card-body">
+        <div class="proj-card-cat">🏗️ Construction</div>
+        <div class="proj-card-title">Project Name</div>
+        <p class="proj-card-desc">Modern residential construction project designed with high-quality materials and efficient architecture.</p>
+        <div class="proj-card-date">📅 2 June 25 – 3 Oct 30</div>
+        <a href="#" class="proj-card-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="proj-card" data-cat="infrastructure">
+      <div class="proj-card-img">
+        <!-- <img src="images/proj-9.jpg" alt="Project 9"> -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1">
+          <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+          <polyline points="21 15 16 10 5 21"/>
+        </svg>
+      </div>
+      <div class="proj-card-body">
+        <div class="proj-card-cat">🏛️ Infrastructure</div>
+        <div class="proj-card-title">Project Name</div>
+        <p class="proj-card-desc">Modern residential construction project designed with high-quality materials and efficient architecture.</p>
+        <div class="proj-card-date">📅 2 June 25 – 3 Oct 30</div>
+        <a href="#" class="proj-card-btn">Know More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     CTA STRIP — orange
+══════════════════════════════════════ -->
+<section id="projects-cta">
+  <h2 class="projects-cta-title">Have a Project in Mind?</h2>
+  <p class="projects-cta-sub">
+    Let's discuss your requirements. Our team is ready to deliver excellence
+    across all our business verticals.
+  </p>
+  <div class="projects-cta-btns">
+    <a href="index.html#contact-cta" class="btn-wh">Get In Touch</a>
+    <a href="about.html" class="btn-wh-out">Learn About Us</a>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer>
+  <div class="foot-inner">
+    <div class="foot-brand">
+      <div class="foot-brand-logo">
+        <div class="foot-logo-icon">🌟</div>
+        <div class="foot-logo-txt">
+          <strong>Jayganesh Manohar</strong>
+          <span>Private Limited</span>
+        </div>
+      </div>
+      <p>A diversified engineering and agriculture company delivering excellence across electrical, civil, solar, agriculture, and manufacturing sectors.</p>
+      <div class="foot-socials">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="Twitter">𝕏</a>
+      </div>
+    </div>
+    <div class="foot-col">
+      <h4>Quick Links</h4>
+      <div class="foot-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="index.html#businesses">Our Businesses</a>
+        <a href="projects.html">Projects</a>
+        <a href="careers.html">Careers</a>
+        <a href="index.html#contact-cta">Contact</a>
+      </div>
+    </div>
+    <div class="foot-col">
+      <h4>Our Businesses</h4>
+      <div class="foot-links">
+        <a href="electrical.html">Electrical Engineering</a>
+        <a href="index.html#businesses">Civil Engineering</a>
+        <a href="index.html#businesses">Solar Energy Solutions</a>
+        <a href="index.html#businesses">Agriculture Farming</a>
+        <a href="index.html#businesses">Manufacturing Unit</a>
+      </div>
+    </div>
+    <div class="foot-col">
+      <h4>Contact Us</h4>
+      <ul class="foot-contacts">
+        <li>📍 Maharashtra, India</li>
+        <li>📞 +91 97688 59999</li>
+        <li>✉️ jgmehr24@gmail.com</li>
+        <li>🌐 www.jayganesh.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <p>© 2026 Jayganesh Manohar Private Limited. All rights reserved.</p>
+    <div class="foot-btm-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  /* ── Project category filter ── */
+  function filterProjects(cat, btn) {
+    document.querySelectorAll('.proj-filter-btn').forEach(function(b) {
+      b.classList.remove('active');
+    });
+    btn.classList.add('active');
+    document.querySelectorAll('.proj-card').forEach(function(card) {
+      card.style.display = (cat === 'all' || card.dataset.cat === cat) ? 'block' : 'none';
+    });
+  }
+
+  /* ── Scroll animations ── */
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.feat-card, .proj-card').forEach(function(el) {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    obs.observe(el);
+  });
+</script>
+
+</body>
+</html>
