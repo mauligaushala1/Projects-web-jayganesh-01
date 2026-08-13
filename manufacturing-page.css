@@ -1,0 +1,172 @@
+/* ============================================================
+   manufacturing-page.css  (v2)
+   Page-specific additions for manufacturing.html only.
+   Load AFTER styles.css. Reuses the same design tokens
+   (--orange, --text, --bg-dark, 'Outfit'/'Manrope' etc.)
+   Design PATTERNS borrowed from reference signage sites
+   (stats strip, photo-tile portfolio grid, step-by-step
+   process blocks, strengths cards) — colors/fonts are 100%
+   ours, nothing redefines the core brand.
+   ============================================================ */
+
+body { padding-top: 68px; } /* clears the fixed navbar */
+
+/* ─── Breadcrumb + simple page hero ─── */
+.page-hero-simple {
+  padding: 56px 4% 0;
+  background: #fff;
+}
+.crumbs {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  margin-bottom: 22px;
+}
+.crumbs a:hover { color: var(--orange); }
+.page-hero-simple .hero-title,
+.page-hero-simple .hero-subtitle,
+.page-hero-simple .hero-pills,
+.page-hero-simple .hero-btns { max-width: 900px; }
+
+/* ─── Stats strip (pattern borrowed from digitalsignagecompany-style hero stats) ─── */
+.stats-strip {
+  margin-top: 44px;
+  padding: 34px 4%;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-light);
+}
+.stats-row {
+  max-width: 1280px; margin: 0 auto;
+  display: flex; justify-content: space-between; flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.stat-item { flex: 1; min-width: 140px; text-align: center; position: relative; }
+.stat-item + .stat-item::before {
+  content: ""; position: absolute; left: -0.75rem; top: 8px; bottom: 8px;
+  width: 1px; background: var(--border);
+}
+.stat-num {
+  font-family: 'Outfit', sans-serif; font-weight: 800;
+  font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--orange);
+  display: block; line-height: 1.1;
+}
+.stat-lbl { font-size: 0.82rem; color: var(--text-muted); margin-top: 4px; }
+@media (max-width: 700px) {
+  .stat-item + .stat-item::before { display: none; }
+}
+
+/* ─── Portfolio tile grid (pattern borrowed from Creative Signplus-style image+caption tiles) ─── */
+#portfolio { padding: 90px 4%; background: #fff; }
+.portfolio-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem; max-width: 1280px; margin: 3rem auto 0;
+}
+.portfolio-tile {
+  position: relative; border-radius: var(--radius-sm); overflow: hidden;
+  aspect-ratio: 4/3; background: var(--bg-dark);
+  box-shadow: var(--shadow); transition: transform 0.25s;
+}
+.portfolio-tile:hover { transform: translateY(-4px); }
+.portfolio-tile img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.35s;
+}
+.portfolio-tile:hover img { transform: scale(1.06); }
+.portfolio-tile .cap {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,0.82) 10%, rgba(0,0,0,0));
+  color: #fff; padding: 2.2rem 1rem 0.9rem;
+  font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 0.85rem;
+  letter-spacing: 0.03em; text-transform: uppercase;
+}
+.portfolio-tile .cap span {
+  display: block; font-family: 'Manrope', sans-serif; font-weight: 500;
+  text-transform: none; letter-spacing: 0; font-size: 0.76rem;
+  color: rgba(255,255,255,0.7); margin-top: 3px;
+}
+@media (max-width: 900px) { .portfolio-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 600px) { .portfolio-grid { grid-template-columns: 1fr; } }
+
+/* ─── Process detail — alternating image/text blocks
+   (pattern borrowed from signage-company "Site Investigation →
+   Design → Production → Installation" step layout) ─── */
+#process-detail { padding: 90px 4%; background: var(--bg-light); }
+.pd-step {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 3.5rem; align-items: center;
+  max-width: 1280px; margin: 0 auto 4.5rem;
+}
+.pd-step:last-child { margin-bottom: 0; }
+.pd-step.rev .pd-media { order: 2; }
+.pd-step.rev .pd-text  { order: 1; }
+.pd-media {
+  border-radius: var(--radius); overflow: hidden;
+  box-shadow: var(--shadow-md); aspect-ratio: 4/3; background: #e8e8e8;
+}
+.pd-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pd-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border-radius: 8px;
+  background: #fff3e0; color: var(--orange);
+  font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 0.85rem;
+  margin-bottom: 0.9rem;
+}
+.pd-text h3 {
+  font-family: 'Outfit', sans-serif; font-weight: 700;
+  font-size: 1.35rem; color: var(--text); margin-bottom: 0.8rem;
+}
+.pd-text p { font-size: 0.93rem; color: var(--text-muted); line-height: 1.75; margin-bottom: 1rem; }
+.pd-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
+.pd-bullets li {
+  font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;
+  padding-left: 1.2rem; position: relative;
+}
+.pd-bullets li::before {
+  content: "—"; position: absolute; left: 0; color: var(--orange); font-weight: 700;
+}
+@media (max-width: 900px) {
+  .pd-step, .pd-step.rev { grid-template-columns: 1fr; gap: 1.5rem; }
+  .pd-step.rev .pd-media, .pd-step.rev .pd-text { order: initial; }
+}
+
+/* ─── Strengths (dark 3-card strip, same visual system as #why in styles.css) ─── */
+#strengths { padding: 90px 4%; background: var(--bg-dark); }
+#strengths .section-label { color: var(--orange); }
+#strengths .section-title { color: #ffffff; }
+#strengths .section-desc  { color: #888888; }
+.strengths-grid {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 1.5rem; max-width: 1280px; margin: 0 auto;
+}
+.strength-card {
+  background: var(--bg-dark-card); border: 1px solid #3a3a3a;
+  border-radius: var(--radius); padding: 2rem;
+  transition: border-color 0.25s, transform 0.25s;
+}
+.strength-card:hover { border-color: var(--orange); transform: translateY(-3px); }
+.strength-icon {
+  width: 52px; height: 52px; background: var(--orange);
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem; margin-bottom: 1.2rem; color: #fff;
+}
+.strength-card h3 { font-family: 'Outfit', sans-serif; font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
+.strength-card p  { font-size: 0.87rem; color: #888; line-height: 1.7; }
+@media (max-width: 900px) { .strengths-grid { grid-template-columns: 1fr; } }
+
+/* ─── Bottom CTA strip (reuses the orange gradient from #contact-cta) ─── */
+#page-cta {
+  padding: 70px 4%;
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 60%, #f97316 100%);
+}
+.page-cta-inner {
+  max-width: 1280px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 2rem; flex-wrap: wrap;
+}
+.page-cta-inner h2 {
+  font-family: 'Outfit', sans-serif; font-weight: 800; color: #fff;
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem); margin-bottom: 0.5rem;
+}
+.page-cta-inner p { color: rgba(255,255,255,0.85); font-size: 0.95rem; margin: 0; }
+.page-cta-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
